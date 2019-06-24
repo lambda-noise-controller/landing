@@ -1,29 +1,57 @@
-* {
-  background: lightgray;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1rem;
-}
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 2% 0 2% 0;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
+.about {
+  background: pink;
+  width: 1000px;
+  margin: auto;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 300px;
+}
+.cards .card {
+  width: 30%;
+}
+.cards .card div {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+footer {
+  text-align: center;
+  padding-top: 100px;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  background: yellow;
+}
+.nav-header {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  font-size: 2rem;
+  background: lightgray;
+  padding: 10px;
+}
+.nav-header nav {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-header nav a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -131,6 +159,9 @@ section {
 }
 body {
   line-height: 1;
+}
+footer {
+  padding: 25px;
 }
 ol,
 ul {
