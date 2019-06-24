@@ -1,18 +1,26 @@
 * {
-  background: darkgray;
+  background: lightgray;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
 }
 nav {
-  width: 90%;
+  width: 100%;
   display: flex;
-  margin: 20% 2% 2% 2%;
-  position: relative;
-  left: 20%;
-  border: 1px solid black;
-}
-nav a {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
+  justify-content: center;
+  margin: 2% 0 2% 0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
