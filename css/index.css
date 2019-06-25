@@ -163,8 +163,6 @@ table {
 @media (max-width: 500px) {
   .cards .card {
     width: 80%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
   }
 }
 .cards .card div {
