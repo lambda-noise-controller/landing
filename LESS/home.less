@@ -9,7 +9,7 @@ header {
 width: 100%;
 display: inline-flex;
 
-    @media @mobile {
+    @media @phone {
     flex-direction: column;
      display: flex;   
     
@@ -32,7 +32,7 @@ display: inline-flex;
         width: 33%;
         margin-top: -5%; 
 
-        @media @mobile {
+        @media @phone {
             width:80%;
             font-size: 5rem;
             height: 30%;
@@ -50,28 +50,27 @@ display: inline-flex;
 
     }
 
-.features {
-    display: flex;
-    justify-content: baseline;
-    flex-wrap: wrap;
-    margin: -5% 5% 3% 0;
-    width: 33%;
-    height: 40%;
-    table-layout: auto;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-    text-shadow: 1px 1px 2px darkgray; 
-            
-        @media @mobile{
-            width: 80%;
-            font-size: 5rem;
+    .features {
+        display: flex;
+        justify-content: baseline;
+        flex-wrap: wrap;
+        margin: -5% 5% 5% 0;
+        width: 33%;
+        height: 35%;
+        table-layout: auto;
+        font-family: 'Montserrat', sans-serif;
+        color:white;
+        text-shadow: 1px 1px 2px darkgray; 
+                
+            @media @phone{
+                width: 80%;
+                font-size: 5rem;
+            }
+
         }
 
-    }
+        #slogan  {
 
-    div  {
-
-    padding: 5%;
-    //border: 1px solid darkslategray;
-
-    }
+        padding: 5%;
+        
+        }
