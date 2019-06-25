@@ -1,6 +1,7 @@
 .about {
-  background: pink;
-  width: 1000px;
+  background: @color2;
+  width: 100%;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -11,16 +12,32 @@
   justify-content: space-around;
   align-content: space-around;
   height: 300px;
+  // border: solid 1px blue;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+
+  @media @phone {
+    height: 500px;
+  }
 
   .card {
+    max-width: 300px;
     width: 30%;
+    // border: solid 1px red;
+    font-size: 1.5rem;
 
     @media @tablet {
-      width: 100%;
+      width: 45%;
+    }
+
+    @media @phone {
+      width: 80%;
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
     }
 
     div {
-      font-size: 1.25rem;
+      font-size: 2rem;
       margin-bottom: 5px;
     }
   }

@@ -130,10 +130,9 @@ table {
   border-spacing: 0;
 }
 .about {
-  background: pink;
-}
-.about-container {
-  width: 1000px;
+  background: #b2d3be;
+  width: 100%;
+  max-width: 1000px;
   margin: auto;
 }
 .cards {
@@ -143,17 +142,33 @@ table {
   justify-content: space-around;
   align-content: space-around;
   height: 300px;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+@media (max-width: 500px) {
+  .cards {
+    height: 500px;
+  }
 }
 .cards .card {
+  max-width: 300px;
   width: 30%;
+  font-size: 1.5rem;
 }
 @media (max-width: 800px) {
   .cards .card {
-    width: 100%;
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .cards .card {
+    width: 80%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
   }
 }
 .cards .card div {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 5px;
 }
 footer {
@@ -164,8 +179,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 1000px;
-  background: #5e6073;
+  width: 100%;
+  background: cornflowerblue;
   font-family: 'Montserrat', sans-serif;
   padding: 0 0 1% 0;
   margin-left: 10%;
@@ -270,39 +285,6 @@ header {
 header {
   width: 100%;
 }
-/* <<<<<<< HEAD:css/index.css
-nav {
-  display: inline-flex;
-  width: 100%;
-  height: 35%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1%;
-}
-@media (max-width: 500px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-}
-=======
->>>>>>> master:CSS/index.css */
-a {
-  text-decoration: none;
-  color: #f2f4d1;
-  font-size: 1.5rem;
-  margin: 0 10% 0 0;
-  width: 80%;
-  text-align: center;
-}
-@media (max-width: 500px) {
-  a {
-    font-size: 4rem;
-    padding: 3%;
-    border-bottom: 1px solid #f2f4d1;
-  }
-}
 #logo {
   display: inline-flex;
   justify-content: right;
@@ -326,15 +308,15 @@ a {
 .container .btn {
   position: absolute;
   top: 50%;
-  left: 9%;
+  left: 17.5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: rgba(187, 14, 14, 0.815);
-  opacity: 0.375;
-  width: 20%;
-  height: 50%;
+  opacity: 0.65;
+  width: 16%;
+  height: 30%;
   padding-left: 5%;
-  margin-left: 3%;
+  margin-left: 1%;
   margin-top: 0%;
   color: white;
   font-size: 16px;
@@ -357,19 +339,24 @@ h1 {
   height: 15%;
   padding: 2%;
 }
-<<<<<<< HEAD:css/index.css
-@media (max-width: 500px) {
-  h1 {
-    font-size: 10rem;
-    text-align: center;
-  }
-=======
-nav {
-  width: 1000px;
+.navBarContainer {
+  width: 100%;
   display: flex;
-}
-nav a {
+  justify-content: space-around;
+  align-items: center;
   font-size: 2rem;
-  font-family: 'Muli', sans-serif;
->>>>>>> master:CSS/index.css
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px auto;
+}
+.navBarContainer nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.navBarContainer nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.navBarContainer a {
+  color: #fff;
 }
