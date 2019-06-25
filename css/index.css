@@ -156,14 +156,14 @@ table {
 }
 footer {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 2%;
 }
 html {
   font-size: 62.5%;
 }
 body {
   width: 1000px;
-  background: #f2f4d1;
+  background: #5e6073;
   font-family: 'Montserrat', sans-serif;
   padding: 0 0 1% 0;
   margin-left: 10%;
@@ -225,13 +225,12 @@ header {
   margin-bottom: 5%;
 }
 #slogan {
-  font-family: 'B612 Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   align-content: center;
-  color: yellow;
-  text-shadow: 1px 1px 2px darkgray;
+  color: #f3e548;
   width: 33%;
-  margin-top: -5%;
+  margin-top: -3%;
 }
 @media (max-width: 500px) {
   #slogan {
@@ -243,20 +242,19 @@ header {
 #quiet-kids {
   width: 33%;
   height: 30%;
-  margin: 0 0 0 0;
+  margin: 2% 0 0 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .features {
   display: flex;
   justify-content: baseline;
   flex-wrap: wrap;
-  margin: -5% 5% 5% 0;
+  margin: 1% 5% 5% 0;
   width: 33%;
   height: 35%;
   table-layout: auto;
   font-family: 'Montserrat', sans-serif;
-  color: white;
-  text-shadow: 1px 1px 2px darkgray;
+  color: #f2f4d1;
 }
 @media (max-width: 500px) {
   .features {
@@ -282,18 +280,22 @@ nav {
   nav {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 a {
   text-decoration: none;
-  color: darkslategray;
+  color: #f2f4d1;
   font-size: 1.5rem;
   margin: 0 10% 0 0;
+  width: 80%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   a {
     font-size: 4rem;
     padding: 3%;
+    border-bottom: 1px solid #f2f4d1;
   }
 }
 #logo {
@@ -319,15 +321,15 @@ a {
 .container .btn {
   position: absolute;
   top: 50%;
-  left: 17.5%;
+  left: 9%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: rgba(187, 14, 14, 0.815);
-  opacity: 0.65;
-  width: 16%;
-  height: 30%;
+  opacity: 0.375;
+  width: 20%;
+  height: 50%;
   padding-left: 5%;
-  margin-left: 1%;
+  margin-left: 3%;
   margin-top: 0%;
   color: white;
   font-size: 16px;
@@ -349,4 +351,10 @@ h1 {
   width: 50%;
   height: 15%;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 10rem;
+    text-align: center;
+  }
 }
