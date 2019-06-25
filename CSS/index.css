@@ -164,26 +164,145 @@ html {
 body {
   width: 1000px;
   margin: auto;
-  background: yellow;
+  background: cornflowerblue;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 0 1% 0;
 }
-.nav-header {
-  display: flex;
-  width: 75%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px auto;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 3% 0 1% 0;
+}
+p {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.25rem;
+}
+h3 {
   font-size: 2rem;
-  background: lightgray;
-  padding: 10px;
 }
-.nav-header nav {
+ul {
+  list-style-type: square;
+  margin: 2% 0% 2% 5%;
+  width: 85%;
+}
+li {
+  padding: 0.375%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+p {
+  line-height: 150%;
+}
+header {
+  width: 100%;
+}
+.top {
+  width: 100%;
+}
+#quiet-kids {
+  width: 35%;
+  height: auto;
+  margin-top: 5%;
+}
+.bottom-text {
   display: flex;
-  width: 75%;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: baseline;
+  flex-wrap: wrap;
+  margin: 5% 0 3% 0;
+  width: 45%;
+  height: 40%;
+  table-layout: auto;
+}
+div {
+  padding: 5%;
+}
+header {
+  width: 100%;
+}
+nav {
+  display: inline-flex;
+  width: 100%;
+  height: 35%;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 1%;
 }
-.nav-header nav a {
+a {
   text-decoration: none;
-  color: dodgerblue;
+  color: darkslategray;
+  font-size: 1.5rem;
+  margin: 0 10% 0 0;
 }
+a :first-child {
+  margin: 10% 0 0 0;
+}
+#logo {
+  display: inline-flex;
+  justify-content: right;
+  align-content: center;
+  width: auto;
+  height: 20%;
+  padding: 0 0 0% 0%;
+}
+.container {
+  display: inline-flex;
+  align-content: flex-start;
+  position: relative;
+  top: 5%;
+  width: 50%;
+  margin-top: -17%;
+}
+/* Make the image responsive */
+.container img {
+  width: 25%;
+  height: auto;
+}
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 17.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(187, 14, 14, 0.815);
+  opacity: 0.65;
+  width: 16%;
+  height: 30%;
+  padding-left: 5%;
+  margin-left: 1%;
+  margin-top: 0%;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+.container .btn:hover {
+  background-color: red;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+  font-weight: bolder;
+  font-size: 6rem;
+  color: white;
+  margin: 5% 0 0 25%;
+  width: 50%;
+  height: 15%;
+  padding: 2%;
+  border-radius: 7px;
+}
+/* Container needed to position the button. Adjust the width as needed */
