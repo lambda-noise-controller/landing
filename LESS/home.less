@@ -4,38 +4,73 @@ header {
     width: 100%;
 
 }
-                        
-        
-    
  
-
 .top {
 width: 100%;
-}
+display: inline-flex;
+
+    @media @phone {
+    flex-direction: column;
+     display: flex;   
     
+    }
+
+    br {
+
+        margin-bottom: 5%;
+    }
+
+
+    }
+    #slogan {
+
+        font-family: 'B612 Mono', monospace;
+        font-weight: bold;
+        align-content: center;
+        color: yellow;
+        text-shadow: 1px 1px 2px darkgray;
+        width: 33%;
+        margin-top: -5%; 
+
+        @media @phone {
+            width:80%;
+            font-size: 5rem;
+            height: 30%;
+        
+                
+            }
+    }
 
     #quiet-kids {
 
-        width: 35%;
-        height: auto;
-        margin-top:5%;
+        width: 33%;
+        height: 30%;
+       margin: 0 0 0 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     }
 
-.bottom-text {
-    display: flex;
-    justify-content: baseline;
-    flex-wrap: wrap;
-    margin: 5% 0 3% 0;
-    width: 45%;
-    height: 40%;
-    table-layout: auto;
- 
-    }
+    .features {
+        display: flex;
+        justify-content: baseline;
+        flex-wrap: wrap;
+        margin: -5% 5% 5% 0;
+        width: 33%;
+        height: 35%;
+        table-layout: auto;
+        font-family: 'Montserrat', sans-serif;
+        color:white;
+        text-shadow: 1px 1px 2px darkgray; 
+                
+            @media @phone{
+                width: 80%;
+                font-size: 5rem;
+            }
 
-    div  {
+        }
 
-    padding: 5%;
-    //border: 1px solid darkslategray;
+        #slogan  {
 
-    }
+        padding: 5%;
+        
+        }

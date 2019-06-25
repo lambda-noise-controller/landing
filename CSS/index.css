@@ -163,10 +163,10 @@ html {
 }
 body {
   width: 1000px;
-  margin: auto;
   background: cornflowerblue;
   font-family: 'Montserrat', sans-serif;
   padding: 0 0 1% 0;
+  margin-left: 10%;
 }
 h1,
 h2,
@@ -187,9 +187,11 @@ h1 {
 }
 h2 {
   font-size: 2.25rem;
+  margin-bottom: 5%;
 }
 h3 {
   font-size: 2rem;
+  margin-bottom: 5%;
 }
 ul {
   list-style-type: square;
@@ -198,9 +200,10 @@ ul {
 }
 li {
   padding: 0.375%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1.5rem;
-  font-style: italic;
+  margin-top: 3%;
+  text-shadow: 1px 1px 2px darkgray;
 }
 p {
   line-height: 150%;
@@ -210,20 +213,56 @@ header {
 }
 .top {
   width: 100%;
+  display: inline-flex;
+}
+@media screen and (max-width: 500px) {
+  .top {
+    flex-direction: column;
+    display: flex;
+  }
+}
+.top br {
+  margin-bottom: 5%;
+}
+#slogan {
+  font-family: 'B612 Mono', monospace;
+  font-weight: bold;
+  align-content: center;
+  color: yellow;
+  text-shadow: 1px 1px 2px darkgray;
+  width: 33%;
+  margin-top: -5%;
+}
+@media screen and (max-width: 500px) {
+  #slogan {
+    width: 80%;
+    font-size: 5rem;
+    height: 30%;
+  }
 }
 #quiet-kids {
-  width: 35%;
-  height: auto;
-  margin-top: 5%;
+  width: 33%;
+  height: 30%;
+  margin: 0 0 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.bottom-text {
+.features {
   display: flex;
   justify-content: baseline;
   flex-wrap: wrap;
-  margin: 5% 0 3% 0;
-  width: 45%;
-  height: 40%;
+  margin: -5% 5% 5% 0;
+  width: 33%;
+  height: 35%;
   table-layout: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px darkgray;
+}
+@media screen and (max-width: 500px) {
+  .features {
+    width: 80%;
+    font-size: 5rem;
+  }
 }
 div {
   padding: 5%;
@@ -239,14 +278,23 @@ nav {
   align-items: center;
   padding: 1%;
 }
+@media screen and (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 a {
   text-decoration: none;
   color: darkslategray;
   font-size: 1.5rem;
   margin: 0 10% 0 0;
 }
-a :first-child {
-  margin: 10% 0 0 0;
+@media screen and (max-width: 500px) {
+  a {
+    font-size: 4rem;
+    padding: 3%;
+  }
 }
 #logo {
   display: inline-flex;
@@ -303,6 +351,5 @@ h1 {
   width: 50%;
   height: 15%;
   padding: 2%;
-  border-radius: 7px;
 }
 /* Container needed to position the button. Adjust the width as needed */
