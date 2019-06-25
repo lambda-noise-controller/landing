@@ -131,6 +131,8 @@ table {
 }
 .about {
   background: pink;
+}
+.about-container {
   width: 1000px;
   margin: auto;
 }
@@ -268,6 +270,7 @@ header {
 header {
   width: 100%;
 }
+/* <<<<<<< HEAD:css/index.css
 nav {
   display: inline-flex;
   width: 100%;
@@ -283,6 +286,8 @@ nav {
     width: 100%;
   }
 }
+=======
+>>>>>>> master:CSS/index.css */
 a {
   text-decoration: none;
   color: #f2f4d1;
@@ -352,9 +357,19 @@ h1 {
   height: 15%;
   padding: 2%;
 }
+<<<<<<< HEAD:css/index.css
 @media (max-width: 500px) {
   h1 {
     font-size: 10rem;
     text-align: center;
   }
+=======
+nav {
+  width: 1000px;
+  display: flex;
+}
+nav a {
+  font-size: 2rem;
+  font-family: 'Muli', sans-serif;
+>>>>>>> master:CSS/index.css
 }
