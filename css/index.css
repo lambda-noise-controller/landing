@@ -163,8 +163,6 @@ table {
 @media (max-width: 500px) {
   .cards .card {
     width: 80%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
   }
 }
 .cards .card div {
@@ -183,7 +181,7 @@ body {
   background: cornflowerblue;
   font-family: 'Montserrat', sans-serif;
   padding: 0 0 1% 0;
-  margin-left: 10%;
+  margin: auto;
 }
 h1,
 h2,
