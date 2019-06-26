@@ -281,8 +281,8 @@ header {
   border: solid 3px rgba(187, 14, 14, 0.815);
   background-color: #F2E205;
 }
-header .hamburger-open {
-  height: 200px;
+header .hamburger-closed {
+  display: flex;
 }
 header nav {
   width: 50%;
@@ -293,6 +293,7 @@ header nav {
 @media (max-width: 800px) {
   header nav {
     display: none;
+    flex-direction: column;
   }
 }
 header nav a {

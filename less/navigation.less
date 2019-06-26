@@ -8,8 +8,9 @@ header {
   border: solid 3px @apple-red;
   background-color: @Noise-Controller-4-hex;
 
-  .hamburger-open {
-    height: 200px;
+  .hamburger-closed {
+    // height: 200px;
+    display: flex;
   }
 
   nav {
@@ -20,6 +21,7 @@ header {
 
     @media @tablet {
       display: none;
+      flex-direction: column;
     }
 
     a {
