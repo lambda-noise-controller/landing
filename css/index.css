@@ -214,9 +214,6 @@ li {
   margin-top: 3%;
   text-shadow: 1px 1px 2px darkgray;
 }
-header {
-  width: 100%;
-}
 .top {
   width: 100%;
   display: inline-flex;
@@ -227,7 +224,7 @@ header {
     display: flex;
   }
 }
-.top br {
+br {
   margin-bottom: 5%;
 }
 #slogan {
@@ -237,6 +234,7 @@ header {
   color: #f3e548;
   width: 33%;
   margin-top: -3%;
+  padding: 5%;
 }
 @media (max-width: 500px) {
   #slogan {
@@ -267,9 +265,6 @@ header {
     width: 80%;
     font-size: 5rem;
   }
-}
-#slogan {
-  padding: 5%;
 }
 header {
   width: 100%;
