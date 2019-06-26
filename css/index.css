@@ -132,7 +132,6 @@ table {
 .about {
   background: #b2d3be;
   width: 100%;
-  max-width: 1000px;
   margin: auto;
 }
 .cards {
@@ -215,19 +214,6 @@ li {
   margin-top: 3%;
   text-shadow: 1px 1px 2px darkgray;
 }
-.top {
-  width: 100%;
-  display: inline-flex;
-}
-@media (max-width: 500px) {
-  .top {
-    flex-direction: column;
-    display: flex;
-  }
-}
-br {
-  margin-bottom: 5%;
-}
 #slogan {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -275,6 +261,8 @@ header {
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   margin: 10px auto;
+  border: solid 1px red;
+  border-radius: 8px;
 }
 header nav {
   width: 50%;
