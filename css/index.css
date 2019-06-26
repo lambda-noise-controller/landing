@@ -167,16 +167,6 @@ table {
   font-size: 2rem;
   margin-bottom: 5px;
 }
-footer {
-  text-align: center;
-  width: 90%;
-  font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px auto;
-}
-footer i {
-  margin: 2px;
-}
 html {
   font-size: 62.5%;
   color: red;
@@ -293,4 +283,13 @@ header nav a:hover {
 }
 header img {
   width: 4.5rem;
+}
+footer {
+  text-align: center;
+  width: 90%;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  color: rgba(187, 14, 14, 0.815);
+  font-weight: 600;
 }
