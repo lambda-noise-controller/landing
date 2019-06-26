@@ -176,13 +176,6 @@ footer {
 html {
   font-size: 62.5%;
 }
-body {
-  width: 100%;
-  background: cornflowerblue;
-  font-family: 'Montserrat', sans-serif;
-  padding: 0 0 1% 0;
-  margin: auto;
-}
 h1,
 h2,
 h3,
@@ -193,6 +186,7 @@ h4 {
 }
 p {
   font-size: 1.5rem;
+  line-height: 150%;
 }
 h1 {
   font-size: 2.5rem;
@@ -219,9 +213,6 @@ li {
   font-size: 1.5rem;
   margin-top: 3%;
   text-shadow: 1px 1px 2px darkgray;
-}
-p {
-  line-height: 150%;
 }
 header {
   width: 100%;
@@ -282,6 +273,29 @@ header {
 }
 header {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px auto;
+}
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+header img {
+  width: 5rem;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 #logo {
   display: inline-flex;
@@ -330,7 +344,16 @@ header {
   border: none;
   cursor: pointer;
 }
-
+@media (max-width: 500px) {
+  .container .btn {
+    display: block;
+    position: relative;
+    right: 90%;
+  }
+}
+.container .btn:hover {
+  background-color: red;
+}
 h1 {
   display: flex;
   justify-content: center;
@@ -343,24 +366,10 @@ h1 {
   height: 15%;
   padding: 2%;
 }
-.navBarContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px auto;
-}
-.navBarContainer nav {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-.navBarContainer nav a {
-  text-decoration: none;
-  color: #fff;
-}
-.navBarContainer img {
-  width: 5rem;
+@media (max-width: 500px) {
+  h1 {
+    font-size: 7rem;
+    text-align: center;
+    margin: 15% 0 0 0;
+  }
 }
