@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Meta Tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Noise Controller - About</title>
@@ -17,45 +17,61 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     <!-- JS -->
-    <script sec="./components/TBD.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./components/tabs.js" async></script>
+
   </head>
 
   <body class="about">
 
-    <div class="navBarContainer">
+    <header>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="#">Login</a>
       </nav>
       <a href="index.html"><img src="./img/nice-apple.png" alt="Nice Apple!" /></a>
-    </div>
+    </header>
 
-  <div class="cards">
-    <div class="card" data-tab="dev1">
-      <div class="dev-name">Dev 1</div>
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
-    </div>
+    <h1>Meet The Developers!</h1>
 
-    <div class="card" data-tab="dev2">
-      <div class="dev-name">Dev 2</div>
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
-    </div>
+    <section class="tabs">
+      <div class="devs-container">
+        <div data-tab="dev1" class="tab active-tab">DEV1</div>
+        <div data-tab="dev2" class="tab">DEV2</div>
+        <div data-tab="dev3" class="tab">DEV3</div>
+        <div data-tab="dev4" class="tab">DEV4</div>
+      </div>
+    </section>
 
-    <div class="card" data-tab="dev3">
-      <div class="dev-name">Dev 3</div>
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
-    </div>
+    <section class='cards'>
+      <div class="card" data-tab="dev1">
+        <div class="dev-name">Dev 1</div>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      </div>
 
-    <div class="card" data-tab="dev4">
-      <div class="dev-name">Dev 4</div>
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
-    </div>
-  </div>
+      <div class="card" data-tab="dev2">
+        <div class="dev-name">Dev 2</div>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      </div>
 
+      <div class="card" data-tab="dev3">
+        <div class="dev-name">Dev 3</div>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      </div>
+
+      <div class="card" data-tab="dev4">
+        <div class="dev-name">Dev 4</div>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      </div>
+    </section>
+
+    <footer>
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright Noise Controller 2019</p>
+    </footer>
   </body>
-
-  <footer>
-    © Copyright 2019
-  </footer>
 </html>

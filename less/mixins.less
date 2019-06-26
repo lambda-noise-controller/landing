@@ -1,2 +1,35 @@
-@apple-red: rgba(187, 14, 14, 0.815);
+// Mixins
+.navDisplayFlex() {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
 
+.montserratFont() {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.muliFont() {
+  font-family: 'Muli', sans-serif;
+}
+
+.testBorderRed() {
+  border: solid 1px red;
+}
+
+.testBorderBlue() {
+  border: solid 1px blue;
+}
+
+.testBorderGreen() {
+  border: solid 1px green;
+}
+
+// Parametric Mixins
+.displayFlex(@justify-content, @align-items, @flex-direction) {
+  display: flex;
+  justify-content: @justify-content;
+  align-items: @align-items;
+  flex-direction: @flex-direction;
+}
