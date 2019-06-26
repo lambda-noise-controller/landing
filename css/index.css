@@ -236,6 +236,12 @@ header {
     display: flex;
   }
 }
+@media (max-width: 800px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .top br {
   margin-bottom: 5%;
 }
@@ -243,17 +249,19 @@ header {
   font-family: 'Muli';
   font-weight: bold;
   align-content: center;
-  color: #D92949;
-  text-shadow: 1px 1px 2px lightgray;
+  color: white;
   width: 33%;
   margin-top: -4%;
   padding: 5%;
 }
+#slogan h2 {
+  color: #D92949;
+}
 @media (max-width: 500px) {
   #slogan {
     width: 60%;
-    font-size: 0.5rem;
-    height: 30%;
+    font-size: 0.25rem;
+    height: 20%;
     text-shadow: 1px 1px 2px darkslategray;
   }
   #slogan p {
@@ -263,6 +271,21 @@ header {
     font-size: 1.25rem;
     margin: 10% 0 0 0;
     color: white;
+  }
+}
+@media (max-width: 800px) {
+  #slogan {
+    display: block;
+    position: relative;
+    left: 30%;
+    width: 55%;
+    margin: 5% 10% 0 0;
+  }
+  #slogan h2 {
+    font-size: 2.5rem;
+  }
+  #slogan p {
+    display: none;
   }
 }
 #quiet-kids {
@@ -275,7 +298,15 @@ header {
   #quiet-kids {
     align-items: flex-end;
     width: 45%;
-    margin: -8% 0 0 5%;
+    margin: -26% 0 0 5%;
+  }
+}
+@media (max-width: 800px) {
+  #quiet-kids {
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    width: 40%;
   }
 }
 .features {
@@ -292,13 +323,19 @@ header {
   text-shadow: 1px 1px 2px lightgray;
   font-weight: bold;
 }
+.features p {
+  color: white;
+}
+.features li {
+  color: white;
+}
 @media (max-width: 500px) {
   .features {
     width: 80%;
-    font-size: 5rem;
+    font-size: 1rem;
   }
   .features h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0 0 0 5.5%;
     color: white;
     text-shadow: 1px 1px 2px darkslategray;
@@ -309,11 +346,31 @@ header {
   .features li {
     width: 80%;
     align-items: center;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 100;
     margin: 0 0 0 12%;
     color: black;
     padding-top: 2%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .features {
+    display: flex;
+    margin: 0 0 0 5%;
+    width: 65%;
+  }
+  .features h2 {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+  .features p {
+    color: white;
+    font-size: 1.875rem;
+  }
+  .features li {
+    color: white;
+    font-size: 1.875rem;
   }
 }
 @font-face {
@@ -426,9 +483,16 @@ h1 {
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    text-align: center;
     margin: 7% 0% 0 10%;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    justify-content: center;
+    margin: 5% 0% 10% 0%;
   }
 }
