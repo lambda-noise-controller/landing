@@ -8,7 +8,7 @@ header {
 .top {
 width: 100%;
 display: inline-flex;
-
+margin: 10% 0 0 5%;
     @media @phone {
     flex-direction: column;
      display: flex;
@@ -24,18 +24,33 @@ display: inline-flex;
     }
     #slogan {
 
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Muli';
         font-weight: bold;
         align-content: center;
-        color: @color5;
-        //text-shadow: 1px 1px 2px darkgray;
+        color: @color1;
+        text-shadow: 1px 1px 2px lightgray;
         width: 33%;
-        margin-top: -3%;
-
+        margin-top: -4%;
+        padding: 5%;
+    
+           
         @media @phone {
-            width:80%;
-            font-size: 5rem;
+            width:60%;
+            font-size: .5rem;
             height: 30%;
+            text-shadow: 1px 1px 2px darkslategray;
+
+            p {
+               display: none;     
+
+            }
+            
+            h2 {
+
+             font-size: 1.25rem;
+             margin: 10% 0 0 0; 
+             color: white;                  
+            }
 
 
             }
@@ -45,32 +60,59 @@ display: inline-flex;
 
         width: 33%;
         height: 30%;
-       margin: 2% 0 0 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       margin: 0% 0 0 0;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+            @media @phone {
+                align-items: flex-end;
+                width: 45%;
+                margin: -8% 0 0 5%;
+            }
     }
 
     .features {
         display: flex;
         justify-content: baseline;
+        color: @color1;
         flex-wrap: wrap;
-        margin: 1% 5% 5% 0;
+        margin: 1% 7% 5% 0;
         width: 33%;
         height: 35%;
         table-layout: auto;
-        font-family: 'Montserrat', sans-serif;
-        color: @color1;
-        //text-shadow: 1px 1px 2px darkgray;
+        font-family: 'Muli';
+        font-size: 3rem;
+        text-shadow: 1px 1px 2px lightgray;
+        font-weight: bold;
 
             @media @phone{
                 width: 80%;
                 font-size: 5rem;
+
+                h2 {
+
+                   font-size: 1.25rem;  
+                   margin: 0 0 0 5.5%;
+                   color: white;
+                   text-shadow: 1px 1px 2px darkslategray;
+                }
+
+                p {
+                  display: none;  
+                }
+
+                li {
+                    width: 80%;
+                    align-items: center;    
+                    font-size: 1.125rem;
+                    font-weight: 100;
+                    margin: 0 0 0 12%;
+                    color: black;
+                    padding-top: 2%;
+                }
+
+
             }
 
         }
 
-        #slogan  {
-
-        padding: 5%;
-
-        }
+        
