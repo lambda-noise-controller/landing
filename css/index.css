@@ -132,6 +132,7 @@ table {
 .about {
   background: #f2f4d1;
   width: 100%;
+  max-width: 1000px;
   margin: auto;
 }
 .cards {
@@ -166,6 +167,12 @@ table {
 .cards .card div {
   font-size: 2rem;
   margin-bottom: 5px;
+}
+.tabs .devs-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 30px auto 20px;
 }
 html {
   font-size: 62.5%;

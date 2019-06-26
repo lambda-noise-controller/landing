@@ -17,7 +17,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     <!-- JS -->
-    <script sec="./components/Tabs/Tabs.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./components/tabs.js" async></script>
 
   </head>
 
@@ -31,6 +32,17 @@
       </nav>
       <a href="index.html"><img src="./img/nice-apple.png" alt="Nice Apple!" /></a>
     </header>
+
+    <h1>Meet The Developers!</h1>
+
+    <section class="tabs">
+      <div class="devs-container">
+        <div data-tab="dev1" class="tab active-tab">DEV1</div>
+        <div data-tab="dev2" class="tab">DEV2</div>
+        <div data-tab="dev3" class="tab">DEV3</div>
+        <div data-tab="dev4" class="tab">DEV4</div>
+      </div>
+    </section>
 
     <section class='cards'>
       <div class="card" data-tab="dev1">
