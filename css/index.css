@@ -175,6 +175,7 @@ footer {
 }
 html {
   font-size: 62.5%;
+  color: red;
 }
 h1,
 h2,
@@ -282,7 +283,6 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: #fff;
 }
 header img {
   width: 5rem;
