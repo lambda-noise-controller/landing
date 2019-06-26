@@ -3,7 +3,41 @@
   .devs-container {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    flex-wrap: wrap;
+    width: 600px;
     margin: 30px auto 20px;
+    font-size: 2rem;
+
+    @media @tablet {
+      width: 500px;
+    }
+
+    @media @phone {
+      width: 300px;
+      height: 125px;
+      justify-content: space-around;
+    }
+
+    .tab {
+      text-align: center;
+      border: solid 3px @apple-red;
+      border-radius: 8px;
+      width: 90px;
+
+      @media @phone {
+        height: 50px;
+      }
+
+      &:hover {
+        background: @Noise-Controller-5-hex;
+      }
+      &:active {
+        background: @color1;
+      }
+    }
+
+    .active-tab {
+      background: @color5;
+    }
   }
 }
