@@ -209,50 +209,78 @@ li {
   margin-top: 3%;
   text-shadow: 1px 1px 2px darkgray;
 }
+#quiet-kids {
+  width: 300px;
+}
+#farm-animals {
+  width: 300px;
+}
 .home {
   background-color: #f2f4d1;
   width: 100%;
   max-width: 1000px;
   margin: auto;
 }
-#slogan {
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: rgba(187, 14, 14, 0.815);
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+.home div {
+  display: flex;
+  flex-direction: row;
+}
+.slogan {
+  display: flex;
+  justify-content: space-around;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   align-content: center;
-  color: #f3e548;
-  width: 33%;
-  margin-top: -3%;
-  padding: 5%;
+  color: #7F3FBF;
+  width: 100%;
+  margin: 25px 0;
 }
-@media (max-width: 500px) {
-  #slogan {
-    width: 80%;
-    font-size: 5rem;
-    height: 30%;
+@media (max-width: 800px) {
+  .slogan {
+    flex-direction: column;
+    align-items: center;
   }
 }
-#quiet-kids {
-  width: 33%;
-  height: 30%;
-  margin: 2% 0 0 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.slogan div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+  width: 300px;
 }
 .features {
   display: flex;
-  justify-content: baseline;
-  flex-wrap: wrap;
-  margin: 1% 5% 5% 0;
-  width: 33%;
-  height: 35%;
-  table-layout: auto;
+  justify-content: space-around;
   font-family: 'Montserrat', sans-serif;
-  color: #f3e548;
+  color: #04D924;
+  margin: 25px 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .features {
-    width: 80%;
-    font-size: 5rem;
+    flex-direction: column-reverse;
+    align-items: center;
   }
+}
+.features div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 50px;
 }
 header {
   display: flex;
