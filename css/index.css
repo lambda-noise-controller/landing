@@ -130,7 +130,7 @@ table {
   border-spacing: 0;
 }
 .about {
-  background: #f2f4d1;
+  background: #D92949;
   width: 100%;
   max-width: 1000px;
   margin: auto;
@@ -199,6 +199,8 @@ h1 {
 h2 {
   font-size: 2.25rem;
   margin-bottom: 5%;
+  font-family: 'skruffyAngel';
+  font-weight: bold;
 }
 h3 {
   font-size: 2rem;
@@ -223,7 +225,7 @@ li {
   width: 300px;
 }
 .home {
-  background-color: #f2f4d1;
+  background-color: #D92949;
   width: 100%;
   max-width: 1000px;
   margin: auto;
@@ -288,6 +290,18 @@ h1 {
   flex-direction: column;
   width: 300px;
   padding: 50px;
+}
+@font-face {
+  font-family: 'skruffyAngel';
+  src: url('../fonts/djb_scruffy_angel-webfont.woff') format('woff'), url('../fonts/djb_scruffy_angel-webfont.woff2') format('woff2'), url('../fonts/djb_scruffy_angel-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'skritchSkratch';
+  src: url('../fonts/djb_skritch_skratch-webfont.woff') format('woff'), url('../fonts/djb_skritch_skratch-webfont.woff2') format('woff2'), url('../fonts/djb_skritch_skratch-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'sandShoes';
+  src: url('../fonts/djb_sand_shoes_and_a_fez-webfont.woff') format('woff'), url('../fonts/djb_sand_shoes_and_a_fez-webfont.woff2') format('woff2'), url('../djb_sand_shoes_and_a_fez-webfont.ttf') format('truetype');
 }
 header {
   display: flex;
