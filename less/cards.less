@@ -1,0 +1,56 @@
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-around;
+
+  @media @phone {
+  }
+
+  .card {
+    width: 500px;
+    height: 100px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: solid 3px @apple-red;
+    display: none;
+
+
+    @media @tablet {
+      width: 450px;
+    }
+
+    @media @phone {
+      width: 400px;
+    }
+
+    div {
+
+    }
+
+    .dev-content{
+      font-size: 2rem;
+      width: 300px;
+      margin-bottom: 5px;
+      margin: auto 0;
+
+      div {
+        padding-bottom: 10px;
+        font-size: 2.5rem;
+      }
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      padding-right: 20px;
+      margin: auto 0;
+    }
+  }
+
+  .active-card {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+  }
+}

@@ -19,13 +19,15 @@
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./components/tabs.js" async></script>
+    <script src="./components/navigation.js" async></script>
 
   </head>
 
   <body class="about">
 
     <header>
-      <nav>
+      <a class="hamburger-button"><span class="hamburger fas fa-bars"></span></a>
+      <nav class='navigation'>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="#">Login</a>
@@ -37,34 +39,56 @@
 
     <section class="tabs">
       <div class="devs-container">
-        <div data-tab="dev1" class="tab active-tab">DEV1</div>
-        <div data-tab="dev2" class="tab">DEV2</div>
-        <div data-tab="dev3" class="tab">DEV3</div>
-        <div data-tab="dev4" class="tab">DEV4</div>
+        <div data-tab="dev1" class="tab active-tab">Brooks Vinyard</div>
+        <div data-tab="dev2" class="tab">David Clavijo</div>
+        <div data-tab="dev3" class="tab">Mark French</div>
+        <div data-tab="dev4" class="tab">Max David</div>
+        <div data-tab="dev5" class="tab">Quinton McNamee</div>
       </div>
     </section>
 
     <section class='cards'>
-      <div class="card" data-tab="dev1">
-        <div class="dev-name">Dev 1</div>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      <div data-tab="dev1" class="card active-card">
+        <img src="https://github.com/brooksvinyard.png" alt="Brooks Vinyard">
+        <div class="dev-content">
+          <div class="dev-name">Brooks Vinyard</div>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+        </div>
       </div>
 
-      <div class="card" data-tab="dev2">
-        <div class="dev-name">Dev 2</div>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      <div data-tab="dev2" class="card">
+        <img src="https://github.com/davichodavid.png" alt="David Clavijo">
+        <div class="dev-content">
+          <div class="dev-name">David Clavijo</div>
+          <span>My name is David, I love quoting movies and eating tacos. Becoming a developer has added another layer to my artistic interests. In the future I'd like to create apps that impact many people's lives.</span>
+        </div>
       </div>
 
-      <div class="card" data-tab="dev3">
-        <div class="dev-name">Dev 3</div>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      <div data-tab="dev3" class="card">
+        <img src="https://github.com/juarezfrench.png" alt="Mark French">
+        <div class="dev-content">
+          <div class="dev-name">Mark French</div>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+        </div>
       </div>
 
-      <div class="card" data-tab="dev4">
-        <div class="dev-name">Dev 4</div>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+      <div data-tab="dev4" class="card">
+        <img src="https://github.com/maxdavid.png" alt="Max David">
+        <div class="dev-content">
+          <div class="dev-name">Max David</div>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed. Felis imperdiet proin fermentum leo.</span>
+        </div>
+      </div>
+
+      <div data-tab="dev5" class="card">
+        <img src="https://github.com/quintonstudent.png" alt="Quinton McNamee">
+        <div class="dev-content">
+          <div class="dev-name">Quinton McNamee</div>
+          <span>My name is Quinton. I have a dog named Mack. My favorite color is orange. I became a developer so that I could make cool apps for young students. My favorite part of being a developer is seeing young students use the apps I create!</span>
+        </div>
       </div>
     </section>
+
 
     <footer>
       <i class="social-icon fab fa-facebook-f"></i>

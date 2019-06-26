@@ -22,6 +22,7 @@ class TabCard {
   }
   selectCard() {
     this.cardElement.style.display = 'flex';
+    this.cardElement.classList.add('active-card');
   }
 }
 

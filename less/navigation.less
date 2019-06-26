@@ -8,11 +8,21 @@ header {
   border: solid 3px @apple-red;
   background-color: @Noise-Controller-4-hex;
 
+  .hamburger-closed {
+    // height: 200px;
+    display: flex;
+  }
+
   nav {
     width: 50%;
     max-width: 500px;
     display: flex;
     justify-content: space-between;
+
+    @media @tablet {
+      display: none;
+      flex-direction: column;
+    }
 
     a {
       text-decoration: none;
@@ -22,6 +32,22 @@ header {
 
     a:hover {
       color: @Noise-Controller-5-hex;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    color: @apple-red;
+
+    &:hover {
+      color: @Noise-Controller-5-hex;
+    }
+    &:active {
+      color: @color1;
+    }
+
+    @media @tablet {
+      display: inherit;
     }
   }
 
