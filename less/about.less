@@ -1,19 +1,19 @@
 .about {
-  background: @color2;
+  background: @color1;
   width: 100%;
   margin: auto;
 }
 
+h6 {
+  text-align: center;
+}
+
 .cards {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
   align-content: space-around;
   height: 300px;
-  // border: solid 1px blue;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
 
   @media @phone {
     height: 500px;
@@ -22,7 +22,6 @@
   .card {
     max-width: 300px;
     width: 30%;
-    // border: solid 1px red;
     font-size: 1.5rem;
 
     @media @tablet {
