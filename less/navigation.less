@@ -1,13 +1,12 @@
 header {
+  .navDisplayFlex();
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   margin: 10px auto;
-  border: solid 1px red;
   border-radius: 8px;
+  border: solid 3px @apple-red;
+  background-color: @Noise-Controller-4-hex;
 
   nav {
     width: 50%;
@@ -16,6 +15,12 @@ header {
 
     a {
       text-decoration: none;
+      color: @apple-red;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: @Noise-Controller-5-hex;
     }
   }
 
