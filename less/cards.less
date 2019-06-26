@@ -1,0 +1,32 @@
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 300px;
+
+  @media @phone {
+    height: 500px;
+  }
+
+  .card {
+    width: 300px;
+    height: 100px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    .testBorderGreen();
+
+    @media @tablet {
+      width: 45%;
+    }
+
+    @media @phone {
+      width: 80%;
+    }
+
+    div {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+  }
+}

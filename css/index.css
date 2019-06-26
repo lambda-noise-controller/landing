@@ -135,45 +135,6 @@ table {
   max-width: 1000px;
   margin: auto;
 }
-.cards {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-content: space-around;
-  height: 300px;
-}
-@media (max-width: 500px) {
-  .cards {
-    height: 500px;
-  }
-}
-.cards .card {
-  width: 300px;
-  height: 100px;
-  font-size: 1.5rem;
-  border-radius: 8px;
-  border: solid 1px green;
-}
-@media (max-width: 800px) {
-  .cards .card {
-    width: 45%;
-  }
-}
-@media (max-width: 500px) {
-  .cards .card {
-    width: 80%;
-  }
-}
-.cards .card div {
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
-.tabs .devs-container {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: 30px auto 20px;
-}
 html {
   font-size: 62.5%;
 }
@@ -340,4 +301,43 @@ footer {
   margin: auto;
   color: rgba(187, 14, 14, 0.815);
   font-weight: 600;
+}
+.tabs .devs-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 30px auto 20px;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 300px;
+}
+@media (max-width: 500px) {
+  .cards {
+    height: 500px;
+  }
+}
+.cards .card {
+  width: 300px;
+  height: 100px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: solid 1px green;
+}
+@media (max-width: 800px) {
+  .cards .card {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .cards .card {
+    width: 80%;
+  }
+}
+.cards .card div {
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
