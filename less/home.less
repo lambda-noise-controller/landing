@@ -1,76 +1,54 @@
+.top {
+  width: 100%;
+  display: inline-flex;
 
-header {
+  @media @phone {
+    flex-direction: column;
+    display: flex;
+  }
 
-    width: 100%;
-
+br {
+  margin-bottom: 5%;
 }
 
-.top {
-width: 100%;
-display: inline-flex;
+#slogan {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  align-content: center;
+  color: @color5;
+  //text-shadow: 1px 1px 2px darkgray;
+  width: 33%;
+  margin-top: -3%;
+  padding: 5%;
 
-    @media @phone {
-    flex-direction: column;
-     display: flex;
+  @media @phone {
+    width:80%;
+    font-size: 5rem;
+    height: 30%;
+  }
+}
 
-    }
+#quiet-kids {
+  width: 33%;
+  height: 30%;
+  margin: 2% 0 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-    br {
+.features {
+  display: flex;
+  justify-content: baseline;
+  flex-wrap: wrap;
+  margin: 1% 5% 5% 0;
+  width: 33%;
+  height: 35%;
+  table-layout: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: @color1;
+  //text-shadow: 1px 1px 2px darkgray;
 
-        margin-bottom: 5%;
-    }
-
-
-    }
-    #slogan {
-
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        align-content: center;
-        color: @color5;
-        //text-shadow: 1px 1px 2px darkgray;
-        width: 33%;
-        margin-top: -3%;
-
-        @media @phone {
-            width:80%;
-            font-size: 5rem;
-            height: 30%;
-
-
-            }
-    }
-
-    #quiet-kids {
-
-        width: 33%;
-        height: 30%;
-       margin: 2% 0 0 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    }
-
-    .features {
-        display: flex;
-        justify-content: baseline;
-        flex-wrap: wrap;
-        margin: 1% 5% 5% 0;
-        width: 33%;
-        height: 35%;
-        table-layout: auto;
-        font-family: 'Montserrat', sans-serif;
-        color: @color1;
-        //text-shadow: 1px 1px 2px darkgray;
-
-            @media @phone{
-                width: 80%;
-                font-size: 5rem;
-            }
-
-        }
-
-        #slogan  {
-
-        padding: 5%;
-
-        }
+  @media @phone{
+    width: 80%;
+    font-size: 5rem;
+  }
+}
