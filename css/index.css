@@ -361,6 +361,6 @@ h1 {
   text-decoration: none;
   color: #fff;
 }
-.navBarContainer a {
-  color: #fff;
+.navBarContainer img {
+  width: 5rem;
 }
