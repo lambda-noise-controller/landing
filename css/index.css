@@ -199,6 +199,7 @@ h1 {
   text-align: center;
   font-size: 5rem;
   color: rgba(187, 14, 14, 0.815);
+  margin-bottom: 15px;
 }
 @media (max-width: 800px) {
   h1 {
@@ -263,6 +264,16 @@ h1 {
   display: flex;
   margin: 15px auto;
 }
+@media (max-width: 800px) {
+  .banner img {
+    height: 250px;
+  }
+}
+@media (max-width: 500px) {
+  .banner img {
+    height: 200px;
+  }
+}
 @font-face {
   font-family: 'skruffyAngel';
   src: url('../fonts/djb_scruffy_angel-webfont.woff') format('woff'), url('../fonts/djb_scruffy_angel-webfont.woff2') format('woff2'), url('../fonts/djb_scruffy_angel-webfont.ttf') format('truetype');
@@ -289,6 +300,7 @@ header {
   background-color: #F2E205;
 }
 header .hamburger-closed {
+  height: 200px;
   display: flex;
 }
 header nav {
@@ -301,6 +313,8 @@ header nav {
   header nav {
     display: none;
     flex-direction: column;
+    font-size: 2.5rem;
+    justify-content: space-around;
   }
 }
 header nav a {
@@ -311,18 +325,18 @@ header nav a {
 header nav a:hover {
   color: #F28705;
 }
-header .hamburger {
+header .hamburger-button {
   display: none;
   color: rgba(187, 14, 14, 0.815);
 }
-header .hamburger:hover {
+header .hamburger-button:hover {
   color: #F28705;
 }
-header .hamburger:active {
+header .hamburger-button:active {
   color: #f2f4d1;
 }
 @media (max-width: 800px) {
-  header .hamburger {
+  header .hamburger-button {
     display: inherit;
   }
 }
