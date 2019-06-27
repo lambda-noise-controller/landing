@@ -11,6 +11,11 @@ header {
   .hamburger-closed {
     height: 200px;
     display: flex;
+
+    @media (min-width: 801px){
+      align-items: center;
+      height: 54px;
+    }
   }
 
   nav {
@@ -18,6 +23,7 @@ header {
     max-width: 500px;
     display: flex;
     justify-content: space-between;
+    align-content: center;
 
     @media @tablet {
       display: none;
