@@ -322,11 +322,18 @@ header .hamburger-closed {
   height: 200px;
   display: flex;
 }
+@media (min-width: 801px) {
+  header .hamburger-closed {
+    align-items: center;
+    height: 54px;
+  }
+}
 header nav {
   width: 50%;
   max-width: 500px;
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 @media (max-width: 800px) {
   header nav {
