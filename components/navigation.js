@@ -6,7 +6,7 @@ hamburgerButton.addEventListener('click', openHamburger);
 
 function openHamburger() {
   console.log('test2');
-  let tabletMenu = document.querySelector('.navigation')
+  let tabletMenu = document.querySelector('.navigation');
   tabletMenu.classList.toggle('hamburger-closed');
 }
 
